@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recatlive/static/css/main.f855e6bc.css",
+    "main.js": "/recatlive/static/js/main.95e602c0.js",
+    "static/js/787.61a5891f.chunk.js": "/recatlive/static/js/787.61a5891f.chunk.js",
+    "index.html": "/recatlive/index.html",
+    "main.f855e6bc.css.map": "/recatlive/static/css/main.f855e6bc.css.map",
+    "main.95e602c0.js.map": "/recatlive/static/js/main.95e602c0.js.map",
+    "787.61a5891f.chunk.js.map": "/recatlive/static/js/787.61a5891f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.95e602c0.js"
+  ]
+}
