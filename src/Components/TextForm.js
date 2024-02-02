@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const TextForm = (props) => {
-  const [text, setText] = useState("Enter Text here");
+  const [text, setText] = useState("");
 
   const handleUpper = () => {
     let newText = text.toUpperCase();
@@ -46,16 +46,16 @@ const TextForm = (props) => {
               onChange={change}
             ></textarea>
           </div>
-          <button className="btn-primary btn mx-2" onClick={handleUpper}>
+          <button className="btn-primary btn mx-2 my-2" disabled={text.length===0} onClick={handleUpper}>
             Convert to upperCase
           </button>
-          <button className="btn-primary btn mx-2" onClick={handleLower}>
+          <button className="btn-primary btn mx- my-2"disabled={text.length===0} onClick={handleLower}>
             Convert to LowerCase
           </button>
-          <button className="btn-primary btn mx-2" onClick={handleCapital}>
+          <button className="btn-primary btn mx-2 my-2" disabled={text.length===0} onClick={handleCapital}>
             Convert to CapitlizeCase
           </button>
-          <button className="btn-primary btn" onClick={handleClear}>
+          <button className="btn-primary btn" disabled={text.length===0}   onClick={handleClear}>
             Clear
           </button>
         </form>
@@ -70,9 +70,9 @@ const TextForm = (props) => {
       >
         <h3>Your Text summary</h3>
         <p>
-          {text.split(" ").length} words and {text.length}Characters
+          {text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length}Characters
         </p>
-        <p>{0.008 * text.split(" ").length} Minutes read</p>
+        <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes read</p>
         <h3>Preview</h3>
         <p>{text.length > 0 ? text : "Enter something to preview here"}</p>
       </div>

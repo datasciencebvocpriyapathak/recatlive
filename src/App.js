@@ -16,7 +16,7 @@ function App() {
   };
   setTimeout(() => {
     setAlert(null);
-  }, 1700);
+  }, 2000);
   const [mode, setMode] = useState("light");
   const [modeText, setModeText] = useState("Enable Dark Mode");
   const toggleMode = () => {
@@ -36,24 +36,16 @@ function App() {
   };
   return (
     <>
-
-
-
       <Navbar
-          title="TextUtils"
-          mode={mode}
-          toggleMode={toggleMode}
-          modeText={modeText}
-        />
+        title="TextUtils"
+        mode={mode}
+        toggleMode={toggleMode}
+        modeText={modeText}
+      />
 
-        <Alert alert={alert} />
-        
-          
-    
-            
-            <TextForm mode={mode} />
-           
-           
+      <Alert alert={alert} />
+
+      <TextForm mode={mode} />
     </>
   );
 }
