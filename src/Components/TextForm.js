@@ -65,7 +65,7 @@ const TextForm = (props) => {
         className="container my-3"
         style={{
           backgroundColor: props.mode === "light" ? "white" : "black",
-          color: props.mode === "dark" ? "white" : "black",
+          color: props.mode === "dark" ? "white" : "black"
         }}
       >
         <h3>Your Text summary</h3>
